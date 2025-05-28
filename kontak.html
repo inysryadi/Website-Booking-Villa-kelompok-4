@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Villa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Kontak & Reservasi</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="daftar-villa.html">Daftar Villa</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="promo.html">Promo</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <form id="reservasi-form" onsubmit="return validateForm()">
+      <div>
+       <label for="nama">Nama:</label>
+       <input type="text" id="nama" name="nama" required>
+      </div>
+
+      <div>
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+       <p>Fasilitas yang Diinginkan:</p>
+       <label><input type="checkbox" name="fasilitas" value="kolam renang"> Kolam Renang</label><br>
+       <label><input type="checkbox" name="fasilitas" value="wifi"> Wi-Fi</label><br>
+       <label><input type="checkbox" name="fasilitas" value="pemandangan danau"> Pemandangan Danau</label><br>
+       <label><input type="checkbox" name="fasilitas" value="ac"> AC</label><br>
+      </div>
+
+      <div>
+       <label for="tanggal">Tanggal Menginap:</label>
+       <input type="date" id="tanggal" name="tanggal" required>
+      </div>
+
+      <div>
+       <label for="pesan">Pesan:</label>
+       <textarea id="pesan" name="pesan" required></textarea>
+      </div>
+
+      <button type="submit">Kirim</button>
+    </form>
+
+
+    <section class="lokasi">
+      <h3>Lokasi Kami</h3>
+      <img src="media/map-villa.jpg" alt="Peta Lokasi Villa">
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
