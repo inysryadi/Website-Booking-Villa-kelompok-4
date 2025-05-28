@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Villa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Galeri</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="daftar-villa.html">Daftar Villa</a></li>
+        <li><a href="promo.html">Promo</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="gallery">
+      <img src="media/villa1.jpg" alt="Villa 1" onclick="openPopup(this)">
+      <img src="media/villa2.jpg" alt="Villa 2" onclick="openPopup(this)">
+      <img src="media/villa3.jpg" alt="Villa 3" onclick="openPopup(this)">
+    </section>
+
+    <div id="popup-gambar" class="popup-gambar" onclick="closePopup()">
+      <span class="close">&times;</span>
+      <img class="popup-content" id="popup-img">
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
