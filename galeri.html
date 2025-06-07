@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Galeri</h1>
+    <h1>Galeri Villa</h1>
     <nav>
       <ul class="nav">
         <li><a href="index.html">Beranda</a></li>
@@ -24,14 +24,19 @@
       <img src="media/villa1.jpg" alt="Villa 1" onclick="openPopup(this)">
       <img src="media/villa2.jpg" alt="Villa 2" onclick="openPopup(this)">
       <img src="media/villa3.jpg" alt="Villa 3" onclick="openPopup(this)">
+      <img src="media/villa4.jpg" alt="Villa 4" onclick="openPopup(this)">
+      <img src="media/villa5.jpg" alt="Villa 5" onclick="openPopup(this)">
+      <img src="media/villa6.jpg" alt="Villa 6" onclick="openPopup(this)">
     </section>
 
-    <div id="popup-gambar" class="popup-gambar" onclick="closePopup()">
-      <span class="close">&times;</span>
-      <img class="popup-content" id="popup-img">
+    <div id="popup-gambar" class="popup-gambar" onclick="closePopup(event)">
+      <span class="close" onclick="closePopup(event)">&times;</span>
+      <div class="popup-container">
+        <img class="popup-content" id="popup-img" alt="Popup Gambar">
+      </div>
     </div>
   </main>
 
-  <script src="js/script.js"></script>
+  <script src="js/galeri.js"></script>
 </body>
 </html>
