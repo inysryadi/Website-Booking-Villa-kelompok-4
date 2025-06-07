@@ -21,22 +21,20 @@
 
   <main>
     <section class="filter">
-    <p>Pilih villa terbaik untuk liburan Anda!</p>
-    <div class="filter-buttons">
+      <p style="text-align:center">Pilih villa terbaik untuk liburan Anda!</p>
+      <div class="filter-buttons">
         <button onclick="filterVilla('all')">Semua</button>
-        <button onclick="filterVilla('kolam renang')">Kolam Renang</button>
-        <button onclick="filterVilla('wifi')">Wi-Fi</button>
-        <button onclick="filterVilla('pemandangan danau')">Pemandangan Danau</button>
-        <button onclick="filterVilla('ac')">AC</button>
-    </div>
+        <button onclick="filterVilla('kolam')">Kolam Renang</button>
+        <button onclick="filterVilla('danau')">Pemandangan Danau</button>
+        <button onclick="filterVilla('murah')">Harga < Rp 3 Juta</button>
+        <button onclick="filterVilla('mahal')">Harga >= Rp 3 Juta</button>
+      </div>
     </section>
-
 
     <section class="villa-grid" id="villa-list">
     </section>
   </main>
 
-  <script src="js/script.js"></script>
+  <script src="js/daftar-villa.js"></script>
 </body>
 </html>
-
