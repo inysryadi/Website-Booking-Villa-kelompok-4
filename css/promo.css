@@ -85,16 +85,24 @@ main {
   background-color: #e0a800;
 }
 
+/* Animasi Detail Promo */
 .promo-detail {
-  margin-top: 1rem;
-  display: none;
   color: #444;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.promo-detail.show {
-  display: block;
+.promo-detail p {
+  margin: 0.5rem 0;
 }
 
-.hidden {
-  display: none;
+.promo-code {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-left: 3px solid #28a745;
+  font-style: italic;
 }
